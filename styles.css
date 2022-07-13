@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    background: linear-gradient(to right, #6B11AD, #E66C77)
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hex-color {
+    text-align: center;
+    padding: 20px;
+}
+
+.hex-color h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+}
+
+.hex-color h2 {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    animation: changecolor 5s infinite alternate;
+}
+
+@keyframes changecolor {
+    0% {
+        color:  indigo;
+    }
+    20% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    60% {
+        color: yellow;
+    }
+    80% {
+        color: orange;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.btn {
+    margin: 20px;
+    width: 20%;
+    font-size: 40px;    
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media(max-width:480px) {
+    .hex-color h1 {
+        font-size: 1.5rem
+    }
+}
